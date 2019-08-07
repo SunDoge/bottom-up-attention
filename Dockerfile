@@ -26,3 +26,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     rm -rf /var/lib/apt/lists/*
 
 RUN git clone https://github.com/NVIDIA/nccl.git && cd nccl && make -j install
+
+RUN pip install pip -U
+
+RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+RUN pip install Cython
