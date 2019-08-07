@@ -31,4 +31,5 @@ RUN pip install pip -U
 
 RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
-RUN pip install Cython
+RUN pip install Cython networkx==2.2 scikie-image easydict protobuf opencv-python
+
