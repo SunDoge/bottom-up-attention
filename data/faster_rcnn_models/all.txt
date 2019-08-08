@@ -1,0 +1,2 @@
+https://github.com/SunDoge/bottom-up-attention/releases/download/v1.0.0/resnet101_faster_rcnn_final.caffemodel
+https://github.com/SunDoge/bottom-up-attention/releases/download/v1.0.0/resnet101_faster_rcnn_final_iter_320000.caffemodel
