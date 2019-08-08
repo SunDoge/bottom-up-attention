@@ -189,4 +189,8 @@ Any NVIDIA GPU with 12GB or larger memory is OK for training Faster R-CNN ResNet
 
 Note that mAP is relatively low because many classes overlap (e.g. person / man / guy), some classes can't be precisely located (e.g. street, field) and separate classes exist for singular and plural objects (e.g. person / people). We focus on performance in downstream tasks (e.g. image captioning, VQA) rather than detection performance. 
 
+### Changes
 
+- 预训练模型下载直链`data/faster_rcnn_models/urls`。
+- `Dockerfile`和构建脚本`docker-build.sh`。
+- 修改编译参数`caffe/Makefile.config`。

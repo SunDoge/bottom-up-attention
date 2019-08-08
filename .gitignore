@@ -63,7 +63,7 @@
 # Data and models are either
 # 1. reference, and not casually committed
 # 2. custom, and live on their own unless they're deliberated contributed
-data/*
+# data/*
 *.caffemodel
 *.caffemodel.h5
 *.solverstate
