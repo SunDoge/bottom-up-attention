@@ -2,6 +2,8 @@
 FROM nvidia/cuda:8.0-cudnn6-devel-ubuntu16.04
 LABEL maintainer caffe-maint@googlegroups.com
 
+RUN sed -i 's/http:\/\/archive\.ubuntu\.com\/ubuntu\//https:\/\/mirrors\.163\.com\/ubuntu\//g' /etc/apt/sources.list
+
 RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
         cmake \
@@ -31,5 +33,5 @@ RUN pip install pip -U
 
 RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
-RUN pip install Cython networkx==2.2 scikie-image easydict protobuf opencv-python
+RUN pip install Cython networkx==2.2 scikit-image easydict protobuf opencv-python
 
